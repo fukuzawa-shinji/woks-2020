@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Page</title>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/slide.css">
+  <link rel="stylesheet" type="text/css" href="./css/burger.css">
+  <link rel="stylesheet" type="text/css" href="./css/accordion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header-title">
+      <h1>JS Collection</h1>
+    </div>
+    <!-- slide html -->
+    <div class="js-contents">
+      <h2>How to study JS</h2>
+      <div class="js-read">
+        <p class="js-lead">一からJSを学ぶ時に何から手をつけたらいいのかわからない。<br>私が思ったのは、学習サイトでよく最初にif文、while文などの基本構文をひたすらやるイメージがあり、よくわからずJSの勉強を断念することが多いと感じます。<br>そこで、下記の学習を試してみてください。</p>
+        <div class="accordion">
+          <button class="accordion-btn">STEP 1</button>
+          <div class="accordion-content">
+            <p class="accord-text"><a href="https://prog-8.com/">「Progate」</a>や<a href="https://dotinstall.com/">「Dotinstall」</a>で無料で受けられるjavascriptの講座を完了します。 </p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <button class="accordion-btn">STEP 2</button>
+          <div class="accordion-content">
+            <p class="accord-text accord-text_lead"><a href="https://youtu.be/q49oL2BDXww">YouTube</a>でJavascript入門の#4～#6-2,#10までの動画を見ながらコーディングをしてみてください。</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-btn">STEP 3</button>
+          <div class="accordion-content">
+            <p class="accord-text accord-text_lead"><a href="https://www.youtube.com/">YouTube</a>でjavascriptの英語のチュートリアルを検索します。<br>日本語だと壊滅的にチュートリアルが出てきません。</p>
+            <p>YouTube内での検索ワード例</p>
+            <p>スライダーのチュートリアル：「slider」「javascript」</p>
+            <p>アコーディオンのチュートリアル：「accordion」「javascript」</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slide html -->
+
+    <!-- burger html -->
+    <div class="burger-container">
+      <div class="burger-nav">
+        <div class="burger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul class="burger-list">
+          <li class="burger-list_item">
+            <a href="#" class="burger-list_link">TEST01</a>
+          </li>
+          <li class="burger-list_item">
+            <a href="#" class="burger-list_link">TEST02</a>
+          </li>
+          <li class="burger-list_item">
+            <a href="#" class="burger-list_link">TEST03</a>
+          </li>
+          <li class="burger-list_item">
+            <a href="#" class="burger-list_link">TEST04</a>
+          </li>
+          <li class="burger-list_item">
+            <a href="#" class="burger-list_link">TEST05</a>
+          </li>
+          <li class="burger-list_item">
+            <a href="#" class="burger-list_link">TEST06</a>
+          </li>
+          <li class="burger-list_item">
+            <a href="#" class="burger-list_link">TEST07</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- コンテンツ3 -->
+    <div class="js-contents_none">
+      <h2>Slideshow</h2>
+      <div class="galleryContainer">
+        <div class="slideShowContainer">
+          <div class="leftArrow" onclick="plusSlides(-1)"><span class="arrow arrowLeft"></span></div>
+          <div class="rightArrow" onclick="plusSlides(1)"><span class="arrow arrowRight"></span></div>
+          <div class="imageHolder">
+            <img src="images/image-assets/island01.jpg">
+          </div>
+          <div class="imageHolder">
+            <img src="images/image-assets/sea01.jpg">
+          </div>
+          <div class="imageHolder">
+            <img src="images/image-assets/sea02.jpg">
+          </div>
+          <div class="imageHolder">
+            <img src="images/image-assets/sea03.jpg">
+          </div>
+          <div class="imageHolder">
+            <img src="images/image-assets/sea04.jpg">
+          </div>
+        </div>
+        <div id="dotsContainer"></div>
+      </div>
+      <div class="js-read">
+        <p><span>自作スライドショー作成</span></p>
+        <p><span>対応ブラウザ：</span>各最新版対応(Chrome,Firefox,safari,IE)</p>
+      </div>
+    </div>
+    <!-- コンテンツ4 -->
+    <div class="js-contents">
+      <h2>Contents Title</h2>
+  </div>
+  <script src="./js/main.js"></script><!-- main js -->
+  <script src="./js/slide.js"></script><!-- slide js -->
+  <script src="./js/burger.js"></script><!-- burger js -->
+  <script src="./js/accordion.js"></script><!-- accordion js -->
+</body>
+
+</html>

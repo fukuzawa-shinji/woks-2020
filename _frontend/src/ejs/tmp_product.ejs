@@ -1,0 +1,63 @@
+<% var jData01 %><!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title><%= jData01.name %> | TestSite</title>
+<meta format-detection="telephone=no">
+<meta name="description" content="<%= jData01.description %>">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<link rel="stylesheet" href="/free_work/_frontend/css/style.css">
+<link rel="stylesheet" href="/free_work/_frontend/css/reset.css">
+</head>
+<body>
+<div id="container">
+  <div class="wrapper">
+    <header class="header">
+      <ul class="t-menu t-menu_sp t-menu_sp01">
+        <li><a>HOME</a></li>
+        <li><a>MENU01</a></li>
+        <li><a>MENU02</a></li>
+      </ul>
+      <ul class="t-menu t-menu_sp">
+        <li><a>MENU03</a></li>
+        <li><a>MENU04</a></li>
+      </ul>
+      <div class="t-sitename">
+        <h1><%= jData01.title %><span>SUB TITLE IS HERE</span></h1>
+      </div>
+      <ul class="t-menu t-menu-pc">
+        <li><a>HOME</a></li>
+        <li><a>MENU01</a></li>
+        <li><a>MENU02</a></li>
+        <li><a>MENU03</a></li>
+        <li><a>MENU04</a></li>
+      </ul>
+    </header>
+
+    <!-- contents -->
+    <div class="t-contents">
+      <div class="t-hero">
+        <div id="slide">
+          <img src="<%= jData01.img01 %>" alt="slide01">
+          <img src="<%= jData01.img02 %>" alt="slide02">
+          <img src="<%= jData01.img03 %>" alt="slide03">
+        </div>
+        <h2 class="t-ttl"><%= jData01.name %></h1>
+        <p class="description"><%= jData01.description %></p>
+      </div>
+    </div>
+    <!-- End contents -->
+
+    <footer class="footer">
+      <h2>html自動生成ツールの作成方法</h2>
+      <ol class="t-intro">
+        <li>「.csv(utf-8)」を作成</li>
+        <li>「.csv」データを「gulp build」コマンドでhtmlを量産</li>
+      </ol>
+    </footer>
+
+  </div><!-- /wrapper -->
+</div><!-- container -->
+<script src="/free_work/_frontend/js/js_slide.js"></script>
+</body>
+</html>
