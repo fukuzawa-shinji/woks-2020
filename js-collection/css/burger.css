@@ -1,104 +1,85 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-size: 14px;
+  background-color: #333333;
 }
 
-.burger-container {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-.burger-container .burger-nav {
-  z-index: 2;
-  width: 250px;
-  height: 100%;
-  max-height: 600px;
-  background: rgba(38, 127, 174, 0.8);
-  position: fixed;
-  top: 0;
-  left: -300px;
-  display: flex;
-  padding-left: 20px;
-  border-radius: 0 40% 70% 0;
-  transition: left 0.8s cubic-bezier(1, 0, 0, 1);
-}
-
-.burger-container .burger-nav .burger-list {
-  text-align: left;
-  padding-top: 100px;
-}
-
-.burger-container .burger-nav .burger-list .burger-list_item {
-  list-style-type: none;
-  padding-bottom: 20px;
-}
-
-.burger-container .burger-nav .burger-list .burger-list_item .burger-list_link {
-  text-decoration: none;
-  font-size: 22px;
-  color: #ffffff;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 3px;
-}
-
-.burger-container .burger-nav .burger-list .burger-list_item .burger-list_link:after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: chocolate;
-  position: absolute;
-  left: 0;
-  transform: scale(0, 1);
-  transform-origin: left top;
-  transition: transform .3s;
-}
-
-.burger-container .burger-nav .burger-list .burger-list_item .burger-list_link:after {
-  bottom: 0;
-}
-
-.burger-container .burger-nav .burger-list .burger-list_item .burger-list_link:hover:after {
-  transform: scale(1, 1);
-}
-
-.burger-container .burger-nav .burger-menu {
+#menu {
   width: 35px;
-  height: 30px;
-  position: fixed;
-  top: 40px;
-  left: 20px;
+  margin: 30px 0 50px 20px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
-.burger-container .burger-nav .burger-menu .line {
+.bar {
+  height: 5px;
   width: 100%;
-  height: 3px;
   background-color: white;
-  transition: all 0.8s;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
-.burger-container .change {
-  left: 0;
+#bar1 {
+  transform: translateY(-4px);
 }
 
-.burger-container .change .burger-menu .line-1 {
-  transform: rotateZ(45deg) translate(8px, 6px);
+#bar3 {
+  transform: translateY(4px);
 }
 
-.burger-container .change .burger-menu .line-2 {
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
   opacity: 0;
 }
 
-.burger-container .change .burger-menu .line-3 {
-  transform: rotateZ(-45deg) translate(8px, -8px);
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.nav {
+  display: none;
+}
+
+.change {
+  display: block;
+}
+
+.nav {
+  padding-left: 20px;
+}
+
+.nav > li {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.nav > li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-bg, #menu-bar {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#menu-bar {
+  z-index: 2;
+}
+
+.menu-bg {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(38, 127, 174, 0.8), rgba(38, 127, 174, 0.8));
+  transition: 0.3s ease;
+}
+
+.change-bg {
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -20%);
 }

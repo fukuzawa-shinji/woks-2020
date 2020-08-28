@@ -45,11 +45,20 @@ h2 {
   color: white;
 }
 
-.js-contents_none .js-read > p {
+.js-read-w > p, .js-read-b > p {
   color: white;
+  margin-bottom: 10px;
 }
 
-.js-read {
+.js-read-w > p:last-child, .js-read-b > p:last-child {
+  margin-bottom: 0;
+}
+
+.js-read-b > p {
+  color: #333333;
+}
+
+.js-read-w, .js-read-b {
   width: 600px;
   margin: 0 auto;
 }
@@ -57,6 +66,7 @@ h2 {
 .js-read .js-lead {
   margin-bottom: 20px;
   text-align: center;
+  line-height: 1.4;
 }
 
 .intro-button {

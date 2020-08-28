@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="./css/burger.css">
   <link rel="stylesheet" type="text/css" href="./css/accordion.css">
   <link rel="stylesheet" type="text/css" href="./css/gallery.css">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
@@ -49,38 +50,22 @@
     <!-- slide html -->
 
     <!-- burger html -->
-    <div class="burger-container">
-      <div class="burger-nav">
-        <div class="burger-menu">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-        </div>
-        <ul class="burger-list">
-          <li class="burger-list_item">
-            <a href="#" class="burger-list_link">TEST01</a>
-          </li>
-          <li class="burger-list_item">
-            <a href="#" class="burger-list_link">TEST02</a>
-          </li>
-          <li class="burger-list_item">
-            <a href="#" class="burger-list_link">TEST03</a>
-          </li>
-          <li class="burger-list_item">
-            <a href="#" class="burger-list_link">TEST04</a>
-          </li>
-          <li class="burger-list_item">
-            <a href="#" class="burger-list_link">TEST05</a>
-          </li>
-          <li class="burger-list_item">
-            <a href="#" class="burger-list_link">TEST06</a>
-          </li>
-          <li class="burger-list_item">
-            <a href="#" class="burger-list_link">TEST07</a>
-          </li>
-        </ul>
+    <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
       </div>
+      <ul class="nav" id="nav">
+        <li><a href="#">test1</a></li>
+        <li><a href="#">test2</a></li>
+        <li><a href="#">test3</a></li>
+        <li><a href="#">test4</a></li>
+        <li><a href="#">test5</a></li>
+      </ul>
     </div>
+    <div class="menu-bg" id="menu-bg"></div>
+
     <!-- コンテンツ3 -->
     <div class="js-contents_none">
       <h2>Slideshow</h2>
@@ -106,7 +91,7 @@
         </div>
         <div id="dotsContainer"></div>
       </div>
-      <div class="js-read">
+      <div class="js-read-w">
         <p><span>自作スライドショー作成</span></p>
         <p><span>対応ブラウザ：</span>各最新版対応(Chrome,Firefox,safari,IE)</p>
       </div>
@@ -184,7 +169,7 @@
           </div>
         </div>
       </div>
-      <div class="js-read">
+      <div class="js-read-b">
         <p><span>ギャラリー</span></p>
         <p><span>対応ブラウザ：</span>各最新版対応(Chrome,Firefox,safari,IE)</p>
       </div>

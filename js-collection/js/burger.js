@@ -1,8 +1,5 @@
-var menuIcon = document.querySelector(".burger-menu");
-var navbar = document.querySelector(".burger-nav");
-
-console.log(navbar);
-
-menuIcon .addEventListener("click", function(){
-    navbar.classList.toggle("change");
-});
+onClickMenu = () =>{
+    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+}
