@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="./css/burger.css">
   <link rel="stylesheet" type="text/css" href="./css/accordion.css">
   <link rel="stylesheet" type="text/css" href="./css/gallery.css">
+  <link rel="stylesheet" type="text/css" href="./css/parallax.css">
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
@@ -18,7 +19,7 @@
     <div class="header-title">
       <h1>JS Collection</h1>
     </div>
-    <!-- slide html -->
+    <!-- how to learn javascript -->
     <div class="js-contents">
       <h2>How to study JS</h2>
       <div class="js-read">
@@ -47,7 +48,7 @@
         </div>
       </div>
     </div>
-    <!-- slide html -->
+    <!-- how to learn javascript -->
 
     <!-- burger html -->
     <div id="menu-bar">
@@ -66,7 +67,7 @@
     </div>
     <div class="menu-bg" id="menu-bg"></div>
 
-    <!-- コンテンツ3 -->
+    <!-- slide show -->
     <div class="js-contents_none">
       <h2>Slideshow</h2>
       <div class="galleryContainer">
@@ -96,12 +97,23 @@
         <p><span>対応ブラウザ：</span>各最新版対応(Chrome,Firefox,safari,IE)</p>
       </div>
     </div>
-    <!-- コンテンツ4 -->
+    <!-- parallax -->
     <div class="js-contents">
+      <h2>Parallax Scroll</h2>
+      <div class="js-parallax">
+        <img src="images/sea-assets/bg.jpg" class="bg translate" data-speed="0.2">
+        <img src="images/sea-assets/people.png" class="people translate" data-speed="0.5">
+        <img src="images/sea-assets/bubble.png" class="bubble translate" data-speed="0.4">
+        <img src="images/sea-assets/rock.png" class="rock translate" data-speed="0.2">
+        <h2 class="text">Deep Sea</h2>
+      </div>
+    </div>
+    <!-- images gallery -->
+    <div class="js-contents_none">
       <h2>Images Gallery</h2>
       <div class="js-gallery">
         <div class="gallery-image">
-          <a class="modalBtn"><img src="images/image-assets/sea01.jpg"></a>
+          <a class="modalBtn"><img src="images/gallery/img_sub-assets/sea01_sub.jpg"></a>
           <div class="simpleModal modal">
             <div class="modal-content">
               <span class="closebtn">&times;</span>
@@ -169,16 +181,16 @@
           </div>
         </div>
       </div>
-      <div class="js-read-b">
+      <div class="js-read-w">
         <p><span>ギャラリー</span></p>
         <p><span>対応ブラウザ：</span>各最新版対応(Chrome,Firefox,safari,IE)</p>
       </div>
   </div>
-  <script src="./js/main.js"></script><!-- main js -->
   <script src="./js/slide.js"></script><!-- slide js -->
   <script src="./js/burger.js"></script><!-- burger js -->
   <script src="./js/accordion.js"></script><!-- accordion js -->
   <script src="./js/gallery.js"></script><!-- gallery js -->
+  <script src="./js/parallax.js"></script><!-- parallax js -->
 </body>
 
 </html>

@@ -11,6 +11,12 @@ body {
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper {
+    font-size: 24px;
+  }
+}
+
 h1 {
   font-family: 'Bebas Neue', cursive;
   text-align: center;
@@ -64,7 +70,8 @@ h2 {
 }
 
 .js-read .js-lead {
-  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto 20px;
   text-align: center;
   line-height: 1.4;
 }
