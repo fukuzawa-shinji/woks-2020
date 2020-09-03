@@ -5,16 +5,11 @@ body {
 }
 
 .wrapper {
+  font-size: 24px;
   background-image: url(../images/origin/island02_or.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper {
-    font-size: 24px;
-  }
 }
 
 h1 {
