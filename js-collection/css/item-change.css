@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .js-item .js-item-main > img {
@@ -17,19 +18,23 @@
   text-align: left;
 }
 
-.js-item .thumb-img .box {
-  display: inline-block;
-  border-radius: 20px;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
+.js-item .thumb-img > p {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.js-item .thumb-img .box-red {
-  background-color: red;
+.js-item .thumb-img .box {
+  display: inline-block;
+  width: 60px;
+  cursor: pointer;
+  border: solid 1px #ccc;
+  padding: 12px 10px;
 }
 
 .js-item .thumb-img .box > img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+}
+
+.js-item .thumb-img {
+  text-align: center;
 }
