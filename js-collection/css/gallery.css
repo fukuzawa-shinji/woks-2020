@@ -1,0 +1,88 @@
+.js-gallery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.js-gallery .gallery-image {
+  margin-left: 20px;
+}
+
+.js-gallery .gallery-image:first-child {
+  margin-left: 0;
+}
+
+.js-gallery .gallery-image .modalBtn {
+  line-height: 0;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+}
+
+.js-gallery .gallery-image .modalBtn > img {
+  transition: 1s all;
+  width: 100%;
+}
+
+.js-gallery .gallery-image .modalBtn > img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1s all;
+}
+
+.js-gallery .gallery-image .modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  top: 0;
+  right: 0;
+  border-radius: 6px;
+  margin: 6% auto;
+  width: 70%;
+  animation: modalopen 1s;
+}
+
+.modal-content .modal_detail > img {
+  width: 100%;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closebtn {
+  position: absolute;
+  top: 6px;
+  cursor: pointer;
+  right: 8px;
+  color: #fff;
+  font-size: 50px;
+}
+
+.closebtn:hover {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closebtn:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}

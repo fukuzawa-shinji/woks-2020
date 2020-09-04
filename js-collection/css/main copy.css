@@ -1,0 +1,60 @@
+.wrapper {
+  background-image: url(../images/origin/island02_or.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 94px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+}
+
+.js-contents {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.js-contents_none {
+  padding: 60px 0;
+}
+
+.js-contents_none > h2 {
+  color: white;
+}
+
+.js-contents_none .js-read > p {
+  color: white;
+}
+
+.js-read {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.js-read .js-lead {
+  margin-bottom: 20px;
+}
+
+.intro-button {
+  border-radius: 100%;
+  border: none;
+  width: 100px;
+  height: 100px;
+}

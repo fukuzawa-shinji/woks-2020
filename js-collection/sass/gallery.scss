@@ -1,0 +1,81 @@
+.js-gallery{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  .gallery-image{
+    margin-left: 20px;
+    &:first-child{
+      margin-left: 0;
+    }
+    .modalBtn{
+      line-height: 0;
+      display: block;
+      cursor: pointer;
+      overflow: hidden;
+      width: 100%;
+      > img{
+        transition: 1s all;
+        width: 100%;
+        &:hover{
+          transform: scale(1.2,1.2);
+          transition: 1s all;
+        }
+      }
+    }
+    .modal{
+      display: none;
+      position: fixed;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.modal-content{
+  position: relative;
+  top: 0;
+  right: 0;
+  border-radius: 6px;
+  margin: 6% auto;
+  width: 70%;
+  animation: modalopen 1s;
+  .modal_detail{
+    > img{
+      width: 100%;
+    }
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closebtn{
+  position: absolute;
+  top: 6px;
+  cursor: pointer;
+  right: 8px;
+  color: #fff;
+  font-size: 50px;
+  &:hover{
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &:focus{
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
